@@ -7,9 +7,9 @@
     <title>Setting</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="~/styles/StyleSheet1.css" media="screen" runat="server"/>
+    <link rel="stylesheet" href="~/styles/StyleSheet1.css" media="screen" runat="server" />
     <link rel="stylesheet" href="~/styles/StyleSheet2.css" media="screen" runat="server"/>
-    <link rel="stylesheet" href="~/styles/StyleSheet3.css" media="screen and (min-width: 768px)" runat="server" />
+    <link rel="stylesheet" href="~/styles/StyleSheet3.css" media="screen and (max-width: 768px)" runat="server" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>

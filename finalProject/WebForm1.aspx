@@ -13,7 +13,7 @@
                 <!--Title-->
                 <div class="content-title">
                     <h1 id="title">
-                        Title
+                        Add product
                     </h1>
                 </div>
 
@@ -115,8 +115,20 @@
                             <div id="img-prw-title">
                                 Image Preview
                             </div>
-                            <div class="img-prw">
-                                <img src="/assets/camera.png" alt="404" id="camera-icon" />
+                            <div class="images">
+                                <div class="img-prw">
+                                    <img src="/assets/camera.png" alt="404" id="camera-icon" />
+                                </div>
+                                <div class="img-prw">
+                                </div>
+                                <div class="img-prw">
+                                </div>
+                                <div class="img-prw">
+                                </div>
+                                <div class="img-prw">
+                                </div>
+                                <div class="img-prw">
+                                </div>
                             </div>
                         </div>
                     </div>
