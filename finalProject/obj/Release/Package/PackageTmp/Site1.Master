@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="finalProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Setting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="~/styles/StyleSheet1.css" media="screen" runat="server" />
+    <link rel="stylesheet" href="~/styles/StyleSheet2.css" media="screen" runat="server"/>
+    <link rel="stylesheet" href="~/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <!--Side Menu (Column 1)-->
+            <div class="column side-menu">
+
+                <!--Shop Logo-->
+                <div class="logo">
+                    <a href="#">
+                        <img src="/assets/logo-no-bg.png" alt="not found" id="side-menu-logo"/>
+                    </a>
+                </div>
+
+                <!--Menu Items-->
+                <div class="menu">
+                    <ul>
+
+                        <!--First Item-->
+                        <li>
+                            <div id="first-item" class="items main active">
+                                <i class="fas fa-align-left"></i>
+                                <span class="items-label">
+                                    View Items
+                                </span>
+                            </div>
+                        </li>
+
+                        <!--Second Items-->
+                        <li>
+                            <div id="second-item" class="items main">
+                                <i class="fas fa-microchip"></i>
+                                Components
+                            </div>
+                            <ul class="nested">
+                                <li class="items sub">
+                                    CPU
+                                </li>
+                                <li class="items sub">
+                                    RAM
+                                </li>
+                                <li class="items sub">
+                                    VGA
+                                </li>
+                                <li class="items sub">
+                                    Upgradables
+                                </li>
+                                <li class="items sub">
+                                    Storages
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Column 2-->
+            <div class="column content-wrapper">
+
+                <!--Navigation Bar-->
+                <div class="nav-bar">
+
+                    <!--Lead-->
+                    <div class="lead">
+                        
+                        <!--Hamburger Button-->
+                        <div class="hamburger" id="hamburger-btn">
+                            <a href="#" class="hamburger-icons">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+
+                        <!--Lead Title-->
+                        <div class="lead-title">
+                            Setting
+                        </div>
+                    </div>
+
+                    <!--Search Box-->
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="Search"/>
+                        <div id="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <!--Notification-->
+                    <div class="notification">
+                        <a href="#">
+                            <img src="/assets/bell.png" alt="404" height="20" width="18" />
+                        </a>
+                    </div>
+
+                    <div class="profile">
+                        <p class="profile-name">
+                            Admin
+                        </p>
+                        <div class="profile-img">
+                        <img src="/assets/profile.png" alt="404" height="35" width="35" />
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Contents-->
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        var hamburger = document.getElementById('hamburger-btn');
+        var sideMenu = document.getElementsByClassName('side-menu')[0];
+        var contentWrapper = document.getElementsByClassName('content-wrapper')[0];
+        var displayState = true;
+        hamburger.addEventListener('click', function () {
+            if (displayState == true) {
+                sideMenu.style.display = 'none';
+                contentWrapper.style.width = '100%';
+                displayState = false;
+            }
+            else {
+                sideMenu.style.display = 'block';
+                contentWrapper.style.width = '80%';
+                displayState = true;
+            }
+
+        });
+    </script>
+</body>
+</html>

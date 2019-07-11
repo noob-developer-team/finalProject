@@ -1,0 +1,68 @@
+﻿
+.content-detail {
+    display: block;
+    width: 100%;
+}
+
+.inputs {
+    padding: 19px 5px 5px 5px;
+    width: 100%;
+}
+
+.input-items {
+    padding: 15px 5px 5px 0px;
+    height: 2.5em;
+    display: table;
+    width: 100%;
+}
+
+.input-items-wrapper {
+    display: block;
+}
+
+.input-label {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    float: left;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+input.input-box {
+    height: 10vh;
+}
+
+.checkbox {
+    margin-top: 20px;
+    width: 42vw;
+    height: 3vh;
+    float: left;
+}
+
+.prw-img {
+    width: 100%;
+}
+
+.btn {
+    width: 25vw;
+    height: 3vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(76, 70, 81, 1);
+    color: rgba(255,255,255,.8);
+    font-family: inherit;
+    transition: background-color .2s ease-in;
+    font-size: 2em;
+}
+.search-box{
+    display: none;
+}
+.profile-name{
+    display: none;
+}
