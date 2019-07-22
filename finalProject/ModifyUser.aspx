@@ -24,13 +24,13 @@
                 <!--Tab Header-->
                 <div class="tab-header">
                     <ul class="tabs">
-                        <li class="tab-item">
-                            <a class="tab-link active" href="#">
+                        <li class="tab-item" id="listUser">
+                            <a class="tab-link tab-link-user active" href="#">
                                 Create User
                             </a>
                         </li>
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
+                        <li class="tab-item" id="listPassword">
+                            <a class="tab-link tab-link-password" href="#">
                                 Change Password
                             </a>
                         </li>
@@ -39,9 +39,13 @@
 
                 <!--Tab Contents-->
                 <div class="content-detail">
+<<<<<<< HEAD
 
                     <!--Create User Contents-->
                     <div class="tab-pane active">
+=======
+                    <div class="tab-pane-user">
+>>>>>>> b7ee6f003121c28e1c0769818b6d22b51e6c87dc
                         <ul style="list-style: none">
                             <li class="input-items">
                                 <div class="mid-align-items">
@@ -135,8 +139,14 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
                     <!--Change Password Contents-->
                     <div class="tab-pane">
+=======
+                <!--Change Password Contents-->
+                <div class="content-detail">
+                    <div class="tab-pane-password">
+>>>>>>> b7ee6f003121c28e1c0769818b6d22b51e6c87dc
                         <ul style="list-style: none">
                             <li class="input-items">
                                 <div class="input-items-wrapper">

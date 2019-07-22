@@ -32,12 +32,15 @@ a.tab-link{
 .tab-link:hover {
     color: black;
 }
+<<<<<<< HEAD
 .tab-pane.active{
     display: block;
 }
 .tab-pane{
     display: none;  
 }
+=======
+>>>>>>> b7ee6f003121c28e1c0769818b6d22b51e6c87dc
 .mid-align-items{
     width: 160px;
     position: relative;
@@ -57,3 +60,4 @@ a.tab-link{
     text-align: center;
     color: #5c80d1;
 }
+.tab-pane-password{display: none;}
