@@ -10,6 +10,6 @@
 namespace finalProject {
     
     
-    public partial class ModifyUser {
+    public partial class WebForm1 {
     }
 }

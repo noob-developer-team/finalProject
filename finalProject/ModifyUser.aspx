@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="AddRAM.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="ModifyUser.aspx.cs" Inherits="finalProject.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -37,8 +37,10 @@
                     </ul>
                 </div>
 
-                <!--Create User Contents-->
+                <!--Tab Contents-->
                 <div class="content-detail">
+
+                    <!--Create User Contents-->
                     <div class="tab-pane active">
                         <ul style="list-style: none">
                             <li class="input-items">
@@ -132,11 +134,9 @@
                             </button>
                         </div>
                     </div>
-                </div>
 
-                <!--Change Password Contents-->
-                <div class="content-detail">
-                    <div class="tab-pane active">
+                    <!--Change Password Contents-->
+                    <div class="tab-pane">
                         <ul style="list-style: none">
                             <li class="input-items">
                                 <div class="input-items-wrapper">
@@ -196,6 +196,7 @@
                             </button>
                         </div>
                     </div>
+
                 </div>
 
             </div>

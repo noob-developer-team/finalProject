@@ -1,15 +1,212 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Configuration.aspx.cs" Inherits="finalProject.Configuration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="Configuration.aspx.cs" Inherits="finalProject.WebForm1" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <body>
+
+            <!--Content-->
+            <div class="content">
+
+                <!--Content Title-->
+                <div class="content-title" style="border-bottom: none;">
+                    <h1>
+                        Configuration
+                    </h1>
+                </div>
+                
+            <!--Tabs Section-->
+            <div class="content-panel">
+
+                <!--Tab Header-->
+                <div class="tab-header">
+                    <ul class="tabs">
+                        <li class="tab-item">
+                            <a class="tab-link active" href="#">
+                                Brand
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-link" href="#">
+                                Series
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-link" href="#">
+                                Model
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Create User Contents-->
+                <div class="content-detail">
+                    <div class="tab-pane active">
+                        <ul style="list-style: none">
+                            <li class="input-items">
+                                <div class="mid-align-items">
+                                    <div class="profile-update">
+                                        <img src="/assets/profile.jpg" width="160" height="160" />
+                                    </div>
+                                    <div class="profile-update-label">
+                                        <span>
+                                            Change
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Username
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <div class="input-grp prefix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="input-box suffix" runat="server"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Password
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Confirm password
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Gender
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <div class="input-grp-drop-down">
+                                            <div class="input-grp-drop-down-label">
+                                                <span>
+                                                    Male
+                                                </span>
+                                            </div>
+                                            <span class="input-grp-drop-down-icon">
+                                                <i class="fas fa-caret-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="save-row">
+                            <button class="btn btn-normal">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tab-pane">
+                        <ul style="list-style: none">
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Old Password
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Password
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Confirm password
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="save-row">
+                            <button class="btn btn-normal">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Change Password Contents-->
+                <div class="content-detail">
+                </div>
+
+            </div>
+            </div>
+            
+
+        </body>
+    </html>
+</asp:Content>

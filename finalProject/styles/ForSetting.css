@@ -35,6 +35,9 @@ a.tab-link{
 .tab-pane.active{
     display: block;
 }
+.tab-pane{
+    display: none;  
+}
 .mid-align-items{
     width: 160px;
     position: relative;
