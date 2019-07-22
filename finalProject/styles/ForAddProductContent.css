@@ -1,10 +1,10 @@
 ﻿body {
     background-color: #ebebea;
+    font-family: Ubuntu;
 }
 .content {
-    padding-bottom: 30px;
+    margin-bottom: 20px;
     background-color: white;
-    font-family: Ubuntu;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -12,13 +12,13 @@
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
 }
 .content-title {
-    padding: 30px 30px 15px;
+    padding: 15px 30px;
     font-size: 1.2rem;
+    border-bottom: 1px solid #e1e1e1;
 }
 .content-detail {
     display: block;
     padding: 5px 30px 5px;
-    width: 50%;
 }
 .inputs {
     padding: 15px 0 0;
@@ -33,19 +33,116 @@
 .input-items-wrapper{
     display: flex;
 }
+.input-label{
+    flex: 1.5;
+}
 .input-input{
     margin-left: auto;
-}
-.input-box{
-    float: right;
-    width: 250px;
-    border: 1px solid grey;
+    display: flex;
     border-radius: 3px;
+    flex: 5;
+}
+.input-grp{
+    border: 1px solid #e1e1e1;
+    background-color: #f5f5f5;
+    padding: 0 5px;
+    color: #575757;
+    z-index: 1;
+    width: 60px;
+}
+.input-grp:hover{
+    cursor: default;
+}
+.input-grp-drop-down {
+    border: 1px solid #e1e1e1;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    color: #575757;
+    z-index: 1;
+    width: 360px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    border-radius: 3px;
+    transition: box-shadow 100ms ease-in;
+    max-width: 460px;
+}
+.input-grp-drop-down>span {
+    margin-left: auto;
+}
+.input-grp-drop-down:hover {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    z-index: 4;
+    cursor: pointer;
+}
+.prefix {
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.suffix {
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px;
+}
+.input-grp-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    float: left;
+}
+.input-grp-text>i{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.input-grp-text-dropdown {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-grp-text-dropdown > i {
+    margin: 0 0 0 5px;
+}
+.input-box {
+    float: right;
+    width: 360px;
+    border: 1px solid #e1e1e1;
     font-family: inherit;
+    z-index: 2;
+    border-radius: 3px;
+}
+input.input-box.middle {
+    width: 240px;
+    border-radius: 0;
+    border: 1px solid #e1e1e1;
+}
+input.input-box.prefix {
+    width: 300px;
+    max-width: 400px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+input.input-box.suffix {
+    width: 300px;
+    max-width: 400px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 input.input-box {
     padding: 5px;
     transition: box-shadow 100ms ease-in;
+    height: 40px;
 }
 input.input-box:focus{
     color: #495057;
@@ -54,7 +151,7 @@ input.input-box:focus{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
-input.input-box:hover{
+.input-box:hover{
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
@@ -87,14 +184,14 @@ textarea.input-box:focus {
     height: 30px;
     align-items: center;
     color: white;
-    float: right;
+    float: left;
     display: flex;
     transition: opacity .2s ease-in;
 }
 .checkbox input:checked ~ .checkbox-box{
     background-color: #ccc;
 }
-#pc-type{
+.checkbox-check{
     display: none;
 }
 .checkbox-box {
@@ -107,9 +204,8 @@ textarea.input-box:focus {
 }
 .save-row {
     margin-top: 30px;
-    padding: 0 30px;
-}
-#save-btn {
+    padding: 30px;
+    border-top: 1px solid #e1e1e1;
 }
 .btn-wrapper{
     float: right;
@@ -125,7 +221,6 @@ textarea.input-box:focus {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .btn {
     width: 120px;
@@ -150,7 +245,7 @@ textarea.input-box:focus {
     height: 170px;
     width: 160px;
     border: 1px dashed;
-    margin-bottom: 15px;
+    margin: 0 15px 15px 0;
 }
 #camera-icon{
     position: relative;

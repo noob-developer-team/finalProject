@@ -24,23 +24,32 @@
 }
 
 .input-label {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .input-box {
     float: left;
     width: 100%;
-    border: 1px solid grey;
-    border-radius: 3px;
+    border: 1px solid #e1e1e1;
     font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    z-index: 2;
 }
 
 input.input-box {
-    height: 10vh;
+    font-size: 1.1em;
+    max-width: 100%;
 }
-
+input.input-box.prefix{
+    width: 100%;
+}
+input.input-box.suffix{
+    width: 100%;
+}
+.input-grp-drop-down {
+    width: 100%;
+}
 .checkbox {
     margin-top: 20px;
     width: 100%;
@@ -76,11 +85,14 @@ input.input-box {
     color: rgba(255,255,255,.8);
     font-family: inherit;
     transition: background-color .2s ease-in;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .search-box{
     display: none;
 }
 .profile-name{
     display: none;
+}
+.mid-align-items{
+    left: 50% !important;
 }

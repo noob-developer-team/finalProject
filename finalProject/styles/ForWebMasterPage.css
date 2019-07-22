@@ -51,25 +51,58 @@ body {
 }
 .items {
     font-family: Ubuntu;
-    padding: 15px 15px 15px 20px;
+    display: flex;
     background-color: transparent;
-    transition: background-color 0.2s ease-in, color 0.2s ease-in;
     color: rgba(255, 255, 255, .6);
 }
-.items:hover {
+.items.main:hover{
     color: white;
+}
+.items:hover {
     cursor: pointer;
 }
 .fas{
     margin-right: 10px;
 }
-.active {
+.main {
+}
+.main>a.menu-link{
+    padding: 15px 15px 15px 20px;
+    width: 100%;
+    display: flex;
+}
+.main>.menu-link>i.fas.fa-angle-right{
+    margin-left: auto;
+}
+.main.active {
     background-color: rgba(76, 70, 81, 1);
     color: white;
 }
 .sub {
-    padding-left: 49px;
     font-size: .9rem;
+    display: block;
+}
+.sub>a.menu-link{
+    padding: 15px 15px 15px 46px;
+}
+.menu-link:link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color .1s ease-in;
+}
+.menu-link:hover{
+    text-decoration: none;
+    color: white;
+}
+.menu-link:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-link:active{
+    text-decoration: none;
+    color: inherit;
 }
 .nav-bar {
     padding: 2vh 2vw 2vh 20px;
@@ -108,8 +141,6 @@ body {
 .search-box:hover{
     background-color: rgba(128,128,128,0.4);
     cursor: text;
-}
-.search-box::placeholder{
     color: grey;
 }
 #search-icon{
@@ -154,11 +185,11 @@ body {
     top: 50%;
     transform: translate(0, -50%);
 }
-.profile-name {
-    height: min-content;
+.profile-name > span {
     position: relative;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translateY(-50%);
+    display: block;
 }
 @media only screen and (max-width: 1150px){
     .side-menu{

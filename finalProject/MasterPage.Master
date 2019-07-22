@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/styles/ForWebMasterPage.css" media="screen" runat="server" />
     <link rel="stylesheet" href="~/styles/ForAddProductContent.css" media="screen" runat="server"/>
     <link rel="stylesheet" href="~/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
+    <link rel="stylesheet" href="~/styles/ForSetting.css" runat="server" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
@@ -34,34 +35,75 @@
                         <!--First Item-->
                         <li>
                             <div id="first-item" class="items main active">
+                                <a href="#" class="menu-link">
                                 <i class="fas fa-align-left"></i>
-                                <span class="items-label">
-                                    View Items
-                                </span>
+                                    <span>
+                                        View Items
+                                    </span>
+                                </a>
                             </div>
                         </li>
 
                         <!--Second Items-->
                         <li>
                             <div id="second-item" class="items main">
+                                <a href="#" class="menu-link">
                                 <i class="fas fa-microchip"></i>
-                                Components
+                                    <span>
+                                        Products
+                                    </span>
+                                <i class="fas fa-angle-right"></i>
+                                </a>
                             </div>
                             <ul class="nested">
                                 <li class="items sub">
-                                    CPU
+                                    <a class="menu-link" href="AddPC.aspx">
+                                        PC
+                                    </a>
+                                    <a class="menu-link" href="Upgrade PC.aspx">
+                                        Upgrade PC
+                                    </a>
+                                    <a class="menu-link" href="AddRAM.aspx">
+                                        RAM
+                                    </a>
+                                    <a class="menu-link" href="AddVGA.aspx">
+                                        VGA
+                                    </a>
+                                    <a class="menu-link" href="AddCPU.aspx">
+                                        CPU
+                                    </a>
+                                    <a class="menu-link" href="AddStorage.aspx">
+                                        Storage
+                                    </a>
                                 </li>
+                            </ul>
+                        </li>
+
+                        <!--Third Items-->
+                        <li>
+                            <div class="items main" id="third-item">
+                                <a href="#" class="menu-link">
+                                    <i class="fas fa-cog"></i>
+                                    <span>
+                                        Setting
+                                    </span>
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <ul class="nested">
                                 <li class="items sub">
-                                    RAM
-                                </li>
-                                <li class="items sub">
-                                    VGA
-                                </li>
-                                <li class="items sub">
-                                    Upgradables
-                                </li>
-                                <li class="items sub">
-                                    Storages
+                                    <a class="menu-link" href="ModifyUser.aspx">
+                                        Modify User
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        List User
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        Configuration
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        Log Out
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -107,9 +149,11 @@
                     </div>
 
                     <div class="profile">
-                        <p class="profile-name">
-                            Admin
-                        </p>
+                        <div class="profile-name">
+                            <span>
+                                Admin
+                            </span>
+                        </div>
                         <div class="profile-img">
                         <img src="/assets/profile.png" alt="404" height="35" width="35" />
                         </div>

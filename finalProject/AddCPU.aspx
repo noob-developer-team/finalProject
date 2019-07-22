@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="AddProduct.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="AddCPU.aspx.cs" Inherits="finalProject.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -13,7 +13,7 @@
                 <!--Title-->
                 <div class="content-title">
                     <h1 id="title">
-                        Add product
+                        Add CPU
                     </h1>
                 </div>
 
@@ -30,59 +30,33 @@
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
+                                            Product Code
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <div class="input-grp prefix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-desktop"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="input-box suffix" runat="server"/>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
                                             Brand
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="text" value="ASUS" id="input-brand" class="input-box"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Model
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <input type="text" value="ASUS 15.6&quot; Gaming A570" id="input-model" class="input-box"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Series
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <input type="text" value="ASUS Gaming" id="input-series" class="input-box"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Code
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <input type="text" value="A12081" id="input-code" class="input-box"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Description
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <textarea cols="40" rows="4" id="input-description" class="input-box">Blah Blah Blah</textarea>
+                                        <input type="text" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp drop-down suffix">
+                                            <span class="input-grp-text">
+                                                <i class="fas fa-caret-down"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -94,24 +68,30 @@
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="number" value="1200" id="input-price" class="input-box"/>
+                                        <input type="Number" step="0.5" class="input-box prefix" runat="server"/>
+                                        <div class="input-grp suffix">
+                                            <span class="input-grp-text">
+                                                USD
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="input-items">
-                                <div class="checkbox">
-                                    <div class="checkbox-box">
-
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Description
+                                        </span>
                                     </div>
-                                    <label class="checkbox-label" for="pc-type">
-                                        Laptop
-                                    </label>
-                                    <input type="checkbox" id="pc-type" checked />
+                                    <div class="input-input">
+                                        <textarea cols="40" rows="4" class="input-box" runat="server"></textarea>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
-                    </div>
 
+                    </div>
                     <!--Column Upload Image-->
                     <div class="img-upload">
                         <div class="prw-img">
@@ -121,10 +101,6 @@
                             <div class="images">
                                 <div class="img-prw">
                                     <img src="/assets/camera.png" alt="404" id="camera-icon" />
-                                </div>
-                                <div class="img-prw">
-                                </div>
-                                <div class="img-prw">
                                 </div>
                             </div>
                         </div>
