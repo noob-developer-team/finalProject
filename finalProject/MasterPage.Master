@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="~/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
     <link rel="stylesheet" href="~/styles/ForSetting.css" runat="server" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -192,26 +193,39 @@
         </div>
     </form>
     <script>
-        var hamburger = document.getElementById('hamburger-btn');
-        var sideMenu = document.getElementsByClassName('side-menu')[0];
-        var contentWrapper = document.getElementsByClassName('content-wrapper')[0];
+        var hamburger = $('#hamburger-btn');
+        var sideMenu = $('.side-menu');
+        var contentWrapper = $('.content-wrapper');
         var displayState = true;
-        hamburger.addEventListener('click', function () {
+        hamburger.click(function () {
             if (displayState == true) {
-                sideMenu.style.display = 'none';
-                contentWrapper.style.width = '100%';
+                sideMenu.hide();
+                contentWrapper.width('100%');
                 displayState = false;
             }
             else {
-                sideMenu.style.display = 'block';
-                contentWrapper.style.width = '80%';
+                sideMenu.show();
+                contentWrapper.width('80%');
                 displayState = true;
             }
 
         });
 
-        $('.tab-pane').display = none;
-        //$('')
+        $('#listUser').click(function () {
+            $('.tab-pane-user').show();
+            $('.tab-pane-password').hide();
+            $('.tab-link-user').addClass('active');
+            $('.tab-link-password').removeClass('active');
+        });
+
+        $('#listPassword').click(function () {
+            $('.tab-pane-password').show();
+            $('.tab-pane-user').hide();
+            $('.tab-link-user').removeClass('active');
+            $('.tab-link-password').addClass('active');
+        });
+
+        $('')
     </script>
 </body>
 </html>
