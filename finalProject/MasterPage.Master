@@ -78,10 +78,36 @@
                                 </li>
                             </ul>
                         </li>
-
+                        
                         <!--Third Items-->
                         <li>
-                            <div class="items main" id="third-item">
+                            <div class="items main">
+                                <a href="#" class="menu-link">
+                                    <i class="fas fa-cog"></i>
+                                    <span>
+                                        Configuration
+                                    </span>
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <ul class="nested">
+                                <li class="items sub">
+                                    <a class="menu-link" href="ModifyUser.aspx">
+                                        Brand
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        Series
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        Model
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Fourth Items-->
+                        <li>
+                            <div class="items main">
                                 <a href="#" class="menu-link">
                                     <i class="fas fa-cog"></i>
                                     <span>
@@ -97,9 +123,6 @@
                                     </a>
                                     <a class="menu-link" href="#">
                                         List User
-                                    </a>
-                                    <a class="menu-link" href="#">
-                                        Configuration
                                     </a>
                                     <a class="menu-link" href="#">
                                         Log Out
@@ -186,6 +209,9 @@
             }
 
         });
+
+        $('.tab-pane').display = none;
+        //$('')
     </script>
 </body>
 </html>

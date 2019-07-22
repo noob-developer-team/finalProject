@@ -31,11 +31,6 @@
                         </li>
                         <li class="tab-item">
                             <a class="tab-link" href="#">
-                                Edit User
-                            </a>
-                        </li>
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
                                 Change Password
                             </a>
                         </li>
@@ -46,6 +41,18 @@
                 <div class="content-detail">
                     <div class="tab-pane active">
                         <ul style="list-style: none">
+                            <li class="input-items">
+                                <div class="mid-align-items">
+                                    <div class="profile-update">
+                                        <img src="/assets/profile.jpg" width="160" height="160" />
+                                    </div>
+                                    <div class="profile-update-label">
+                                        <span>
+                                            Change
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="input-items">
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
@@ -121,70 +128,7 @@
                         </ul>
                         <div class="save-row">
                             <button class="btn btn-normal">
-                                Create
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Edit User Contents-->
-                <div class="content-detail">
-                    <div class="tab-pane">
-                        <ul style="list-style: none">
-                            <li class="input-items">
-                                <div class="mid-align-items">
-                                    <div class="profile-update">
-                                        <img src="/assets/profile.jpg" width="160" height="160" />
-                                    </div>
-                                    <div class="profile-update-label">
-                                        <span>
-                                            Change
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Change username
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <div class="input-grp prefix">
-                                            <span class="input-grp-text">
-                                                <i class="fas fa-user"></i>
-                                            </span>
-                                        </div>
-                                        <input type="text" class="input-box suffix" runat="server"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Gender
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <div class="input-grp-drop-down">
-                                            <div class="input-grp-drop-down-label">
-                                                <span>
-                                                    Male
-                                                </span>
-                                            </div>
-                                            <span class="input-grp-drop-down-icon">
-                                                <i class="fas fa-caret-down"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="save-row">
-                            <button class="btn btn-normal">
-                                Edit
+                                Save
                             </button>
                         </div>
                     </div>
@@ -248,7 +192,7 @@
                         </ul>
                         <div class="save-row">
                             <button class="btn btn-normal">
-                                Create
+                                Save
                             </button>
                         </div>
                     </div>
