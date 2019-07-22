@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="~/styles/ForAddProductContent.css" media="screen" runat="server"/>
     <link rel="stylesheet" href="~/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
     <link rel="stylesheet" href="~/styles/ForSetting.css" runat="server" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+=======
+    <link rel="stylesheet" href="~/styles/fa-icons.css" runat="server">
+>>>>>>> de4ba71d397192bf21c58d5cf715fd3154375195
 </head>
 <body>
     <form id="form1" runat="server">
