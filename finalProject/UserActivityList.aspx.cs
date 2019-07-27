@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace finalProject
 {
-    public partial class UserActivities1 : System.Web.UI.Page
+    public partial class UserActivities : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

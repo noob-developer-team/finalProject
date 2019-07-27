@@ -102,6 +102,7 @@
     <Content Include="assets\profile.jpg" />
     <Content Include="Configuration.aspx" />
     <Content Include="ListItems.aspx" />
+    <Content Include="ListUser.aspx" />
     <Content Include="ModifyUser.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -126,6 +127,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Upgrade PC.aspx" />
     <Content Include="UserActivities.aspx" />
+    <Content Include="UserActivityList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +173,13 @@
     <Compile Include="ListItems.aspx.designer.cs">
       <DependentUpon>ListItems.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListUser.aspx.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListUser.aspx.designer.cs">
+      <DependentUpon>ListUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModifyUser.aspx.cs">
       <DependentUpon>ModifyUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -206,6 +215,13 @@
     </Compile>
     <Compile Include="UserActivities.aspx.designer.cs">
       <DependentUpon>UserActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserActivityList.aspx.cs">
+      <DependentUpon>UserActivityList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserActivityList.aspx.designer.cs">
+      <DependentUpon>UserActivityList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

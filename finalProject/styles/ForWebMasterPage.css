@@ -16,6 +16,7 @@ body {
     width: 20%;
     color: #fff;
     position: fixed;
+    overflow: scroll;
 }
 .main-content {
     padding: 30px 30px 0;
@@ -44,6 +45,9 @@ body {
     margin-left: 50%;
     transform: translate(-50%, 0);
 }
+::-webkit-scrollbar{
+    width: 0;
+}
 .menu {
 }
 .menu ul li{
@@ -61,7 +65,7 @@ body {
 .items:hover {
     cursor: pointer;
 }
-.fas{
+.menu-link .fas{
     margin-right: 10px;
 }
 .main {
@@ -80,7 +84,13 @@ body {
 }
 .sub {
     font-size: .9rem;
-    display: block;
+    display: none;
+}
+.main .fa-angle-right{
+    transition: transform .1s ease-in;
+}
+.main .fa-angle-right.expanded {
+    transform: rotate(90deg);
 }
 .sub>a.menu-link{
     padding: 15px 15px 15px 46px;
@@ -115,6 +125,11 @@ body {
 }
 .lead {
     display: flex;
+}
+.hamburger-icons {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 10px;
 }
 .lead-title {
     font-family: Ubuntu, sans-serif;

@@ -5,19 +5,15 @@
 <html>
 <head runat="server">
     <title>Setting</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="~/styles/ForWebMasterPage.css" media="screen" runat="server" />
-    <link rel="stylesheet" href="~/styles/ForAddProductContent.css" media="screen" runat="server"/>
+    <link rel="stylesheet" href="~/styles/ForAddProductContent.css" media="screen" runat="server" />
     <link rel="stylesheet" href="~/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
     <link rel="stylesheet" href="~/styles/ForSetting.css" runat="server" />
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-=======
-    <link rel="stylesheet" href="~/styles/fa-icons.css" runat="server">
->>>>>>> de4ba71d397192bf21c58d5cf715fd3154375195
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,7 +25,7 @@
                 <!--Shop Logo-->
                 <div class="logo">
                     <a href="#">
-                        <img src="/assets/logo-no-bg.png" alt="not found" id="side-menu-logo"/>
+                        <img src="/assets/logo-no-bg.png" alt="not found" id="side-menu-logo" />
                     </a>
                 </div>
 
@@ -39,25 +35,25 @@
 
                         <!--First Item-->
                         <li>
-                            <div id="first-item" class="items main active">
-                                <a href="#" class="menu-link">
-                                <i class="fas fa-align-left"></i>
+                            <div id="first-item" class="items main">
+                                <a href="ListItems.aspx" class="menu-link">
+                                    <i class="fas fa-align-left"></i>
                                     <span>
-                                        View Items
+                                        List Items
                                     </span>
                                 </a>
                             </div>
                         </li>
 
                         <!--Second Items-->
-                        <li>
-                            <div id="second-item" class="items main">
+                        <li id="second-item">
+                            <div class="items main">
                                 <a href="#" class="menu-link">
-                                <i class="fas fa-microchip"></i>
+                                    <i class="fas fa-microchip"></i>
                                     <span>
                                         Products
                                     </span>
-                                <i class="fas fa-angle-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </a>
                             </div>
                             <ul class="nested">
@@ -83,35 +79,20 @@
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <!--Third Items-->
                         <li>
                             <div class="items main">
-                                <a href="#" class="menu-link">
-                                    <i class="fas fa-cog"></i>
-                                    <span>
-                                        Configuration
+                                <a href="Configuration.aspx" class="menu-link">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Configuration
                                     </span>
-                                    <i class="fas fa-angle-right"></i>
                                 </a>
                             </div>
-                            <ul class="nested">
-                                <li class="items sub">
-                                    <a class="menu-link" href="ModifyUser.aspx">
-                                        Brand
-                                    </a>
-                                    <a class="menu-link" href="#">
-                                        Series
-                                    </a>
-                                    <a class="menu-link" href="#">
-                                        Model
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
 
                         <!--Fourth Items-->
-                        <li>
+                        <li id="fourth-item">
                             <div class="items main">
                                 <a href="#" class="menu-link">
                                     <i class="fas fa-cog"></i>
@@ -126,7 +107,10 @@
                                     <a class="menu-link" href="ModifyUser.aspx">
                                         Modify User
                                     </a>
-                                    <a class="menu-link" href="#">
+                                    <a class="menu-link" href="UserActivityList.aspx">
+                                        User Activities
+                                    </a>
+                                    <a class="menu-link" href="ListUser.aspx">
                                         List User
                                     </a>
                                     <a class="menu-link" href="#">
@@ -147,7 +131,7 @@
 
                     <!--Lead-->
                     <div class="lead">
-                        
+
                         <!--Hamburger Button-->
                         <div class="hamburger" id="hamburger-btn">
                             <a href="#" class="hamburger-icons">
@@ -163,7 +147,7 @@
 
                     <!--Search Box-->
                     <div class="search">
-                        <input type="text" class="search-box" placeholder="Search"/>
+                        <input type="text" class="search-box" placeholder="Search" />
                         <div id="search-icon">
                             <i class="fas fa-search"></i>
                         </div>
@@ -178,16 +162,15 @@
 
                     <div class="profile">
                         <div class="profile-name">
-                            <span>
-                                Admin
+                            <span>Admin
                             </span>
                         </div>
                         <div class="profile-img">
-                        <img src="/assets/profile.png" alt="404" height="35" width="35" />
+                            <img src="/assets/profile.png" alt="404" height="35" width="35" />
                         </div>
                     </div>
                 </div>
-                
+
                 <!--Contents-->
                 <div class="main-content">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -216,20 +199,69 @@
         });
 
         $('#listUser').click(function () {
-            $('.tab-pane-user').show();
-            $('.tab-pane-password').hide();
-            $('.tab-link-user').addClass('active');
-            $('.tab-link-password').removeClass('active');
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.user').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.user').toggleClass('active');
         });
 
         $('#listPassword').click(function () {
-            $('.tab-pane-password').show();
-            $('.tab-pane-user').hide();
-            $('.tab-link-user').removeClass('active');
-            $('.tab-link-password').addClass('active');
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.change-password').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.change-password').toggleClass('active');
         });
 
-        $('')
+        $('#listBrand').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.brand').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.brand').toggleClass('active');
+        });
+
+        $('#listSeries').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.series').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.series').toggleClass('active');
+        });
+
+        $('#listModel').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.model').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.model').toggleClass('active');
+        });
+        $('.search-header').click(function () {
+            $('.advanced-search-detail').toggleClass('active');
+            $('.search-header').toggleClass('hide');
+        });
+        $('.search-header.hide').click(function () {
+            $('.advanced-search-detail').toggleClass('active');
+            $('.search-header').toggleClass('hide');
+        });
+
+        $('#second-item').click(function () {
+            $('#second-item').toggleClass('expanded');
+            $('#second-item .sub').toggleClass('active');
+            $('#second-item .fa-angle-right').toggleClass('expanded');
+        });
+        $('#second-item.expanded').click(function () {
+            $('#second-item .sub').toggleClass('active');
+            $('#second-item .fa-angle-right').toggleClass('expanded');
+            $('#second-item').toggleClass('expanded');
+        });
+
+        $('#fourth-item').click(function () {
+            $('#fourth-item').toggleClass('expanded');
+            $('#fourth-item .sub').toggleClass('active');
+            $('#fourth-item .fa-angle-right').toggleClass('expanded');
+        });
+        $('#fourth-item.expanded').click(function () {
+            $('#fourth-item .sub').toggleClass('active');
+            $('#fourth-item .fa-angle-right').toggleClass('expanded');
+            $('#fourth-item').toggleClass('expanded');
+        });
     </script>
 </body>
 </html>

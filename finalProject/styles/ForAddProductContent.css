@@ -20,6 +20,9 @@
     display: block;
     padding: 5px 30px 5px;
 }
+.active{
+    display: block !important;
+}
 .inputs {
     padding: 15px 0 0;
     margin-bottom: 15px;
@@ -114,13 +117,28 @@
 .input-grp-text-dropdown > i {
     margin: 0 0 0 5px;
 }
-.input-box {
-    float: right;
-    width: 360px;
+label{
+    color: #696969;
+}
+input {
     border: 1px solid #e1e1e1;
     font-family: inherit;
     z-index: 2;
     border-radius: 3px;
+    padding: 5px;
+    transition: box-shadow 100ms ease-in;
+    height: 40px;
+    width: 360px;
+}
+input:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.input-box {
+    float: right;
 }
 input.input-box.middle {
     width: 240px;
@@ -139,27 +157,18 @@ input.input-box.suffix {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
-input.input-box {
-    padding: 5px;
-    transition: box-shadow 100ms ease-in;
-    height: 40px;
-}
-input.input-box:focus{
+input:hover{
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
-.input-box:hover{
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-textarea.input-box{
+textarea.input-box {
     padding: 5px;
+    width: 360px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
 }
 textarea.input-box:hover {
     color: #495057;
@@ -230,7 +239,7 @@ textarea.input-box:focus {
     background-color: rgba(76, 70, 81, 1);
     color: rgba(255,255,255,.8);
     font-family: inherit;
-    transition: background-color .2s ease-in;
+    transition: background-color .1s ease-in;
 }
 .btn:hover{
     background-color: rgba(76, 70, 81, .8);

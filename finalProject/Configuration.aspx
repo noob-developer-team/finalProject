@@ -1,135 +1,113 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="Configuration.aspx.cs" Inherits="finalProject.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <html xmlns="http://www.w3.org/1999/xhtml">
-        <body>
+    <body>
 
-            <!--Content-->
-            <div class="content">
+        <!--Content-->
+        <div class="content">
 
-                <!--Content Title-->
-                <div class="content-title" style="border-bottom: none;">
-                    <h1>
-                        Configuration
-                    </h1>
-                </div>
-                
+            <!--Content Title-->
+            <div class="content-title" style="border-bottom: none;">
+                <h1>Configuration
+                </h1>
+            </div>
+
             <!--Tabs Section-->
             <div class="content-panel">
 
                 <!--Tab Header-->
                 <div class="tab-header">
                     <ul class="tabs">
-                        <li class="tab-item">
-                            <a class="tab-link active" href="#">
+                        <li class="tab-item" id="listBrand">
+                            <a class="tab-link brand active" href="#">
                                 Brand
                             </a>
                         </li>
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
+                        <li class="tab-item" id="listSeries">
+                            <a class="tab-link series" href="#">
                                 Series
                             </a>
                         </li>
-                        <li class="tab-item">
-                            <a class="tab-link" href="#">
+                        <li class="tab-item" id="listModel">
+                            <a class="tab-link model" href="#">
                                 Model
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <!--Create User Contents-->
+                <!--Tab Contents-->
                 <div class="content-detail">
-                    <div class="tab-pane active">
+
+                    <!--Brand Content-->
+                    <div class="tab-pane brand active">
                         <ul style="list-style: none">
-                            <li class="input-items">
-                                <div class="mid-align-items">
-                                    <div class="profile-update">
-                                        <img src="/assets/profile.jpg" width="160" height="160" />
-                                    </div>
-                                    <div class="profile-update-label">
-                                        <span>
-                                            Change
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
                             <li class="input-items">
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
-                                            Username
+                                            Brand Name
                                         </span>
                                     </div>
                                     <div class="input-input">
                                         <div class="input-grp prefix">
                                             <span class="input-grp-text">
-                                                <i class="fas fa-user"></i>
+                                                Brand
                                             </span>
                                         </div>
-                                        <input type="text" class="input-box suffix" runat="server"/>
+                                        <input type="text" class="input-box suffix" runat="server" />
                                     </div>
                                 </div>
                             </li>
+                        </ul>
+                        <div class="save-row">
+                            <button class="btn btn-normal">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!--Series Content-->
+                    <div class="tab-pane series">
+                        <ul style="list-style: none">
                             <li class="input-items">
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
-                                            Password
+                                            Brand
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <input type="text" class="input-box prefix" runat="server" />
                                         <div class="input-grp drop-down suffix">
                                             <span class="input-grp-text">
-                                                <i class="fas fa-eye"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Confirm password
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <input type="password" class="input-box prefix" runat="server"/>
-                                        <div class="input-grp drop-down suffix">
-                                            <span class="input-grp-text">
-                                                <i class="fas fa-eye"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="input-items">
-                                <div class="input-items-wrapper">
-                                    <div class="input-label">
-                                        <span>
-                                            Gender
-                                        </span>
-                                    </div>
-                                    <div class="input-input">
-                                        <div class="input-grp-drop-down">
-                                            <div class="input-grp-drop-down-label">
-                                                <span>
-                                                    Male
-                                                </span>
-                                            </div>
-                                            <span class="input-grp-drop-down-icon">
                                                 <i class="fas fa-caret-down"></i>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </li>
+                            <li class="input-items">
+                                <div class="input-items-wrapper">
+                                    <div class="input-label">
+                                        <span>
+                                            Series Name
+                                        </span>
+                                    </div>
+                                    <div class="input-input">
+                                        <div class="input-grp prefix">
+                                            <span class="input-grp-text">
+                                                Series
+                                            </span>
+                                        </div>
+                                        <input type="text" class="input-box suffix" runat="server" />
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                         <div class="save-row">
                             <button class="btn btn-normal">
@@ -137,20 +115,22 @@
                             </button>
                         </div>
                     </div>
-                    <div class="tab-pane">
+
+                    <!--Model Content-->
+                    <div class="tab-pane model">
                         <ul style="list-style: none">
                             <li class="input-items">
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
-                                            Old Password
+                                            Brand
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <input type="text" class="input-box prefix" runat="server" />
                                         <div class="input-grp drop-down suffix">
                                             <span class="input-grp-text">
-                                                <i class="fas fa-eye"></i>
+                                                <i class="fas fa-caret-down"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -160,14 +140,14 @@
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
-                                            Password
+                                            Series
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="password" class="input-box prefix" runat="server"/>
+                                        <input type="text" class="input-box prefix" runat="server" />
                                         <div class="input-grp drop-down suffix">
                                             <span class="input-grp-text">
-                                                <i class="fas fa-eye"></i>
+                                                <i class="fas fa-caret-down"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -177,16 +157,16 @@
                                 <div class="input-items-wrapper">
                                     <div class="input-label">
                                         <span>
-                                            Confirm password
+                                            Model Name
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="password" class="input-box prefix" runat="server"/>
-                                        <div class="input-grp drop-down suffix">
+                                        <div class="input-grp prefix">
                                             <span class="input-grp-text">
-                                                <i class="fas fa-eye"></i>
+                                                Series
                                             </span>
                                         </div>
+                                        <input type="text" class="input-box suffix" runat="server" />
                                     </div>
                                 </div>
                             </li>
@@ -198,15 +178,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!--Change Password Contents-->
-                <div class="content-detail">
-                </div>
-
             </div>
-            </div>
-            
+        </div>
 
-        </body>
+
+    </body>
     </html>
 </asp:Content>

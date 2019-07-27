@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="UserActivities.aspx.cs" Inherits="finalProject.ListItems" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="ListUser.aspx.cs" Inherits="finalProject.ListItems" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -11,73 +11,12 @@
         <div class="content">
             <div class="content-title">
                 <h1>
-                    User Activities
+                    List Items
                 </h1>
             </div>
 
         </div>
         
-        <!--Advanced Search-->
-        <div class="content">
-            <div class="advanced-search">
-
-                <!-- Start Advanced Search Title-->
-                <div class="advanced-search-title">
-                    <i class="fas fa-search"></i>
-                    <span style="display: block">
-                        Search
-                    </span>
-                </div>
-                <!-- End Advanced Search Title-->
-
-                <!--Start Advanced Search Content-->
-                <div class="advanced-search-content">
-
-                    <!--Start Advanced Search Header-->
-                    <div class="search-header">
-                        <div>
-                            <i class="fas fa-search-plus"></i>
-                            <span style="display: block;">
-                                Advanced Search
-                            </span>
-                        </div>
-                    </div>
-                    <!--End Advanced Search Header-->
-
-                    <!--Start Advanced Search Detail-->
-                    <div class="advanced-search-detail">
-                        <ul style="list-style: none;">
-                            <li>
-                                <div class="advanced-search-row">
-                                    <label>
-                                        From
-                                    </label>
-                                    <input type="text" runat="server"/>
-                                </div>
-                                <div class="advanced-search-row">
-                                    <label>
-                                        To
-                                    </label>
-                                    <input type="text" runat="server"/>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="advanced-search-row">
-                                    <button class="btn btn-normal">
-                                        Search
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Start Advanced Search Detail-->
-
-                </div>
-                <!--End Advanced Search Content-->
-
-            </div>
-        </div>
-
         <!--Start Table Content-->
         <div class="content">
             <div class="content-detail">
@@ -122,10 +61,10 @@
                         <thead class="table-header">
                             <tr>
                                 <th class="sorting">
-                                    Date and Time
+                                    User ID
                                 </th>
                                 <th class="sorting">
-                                    Activities
+                                    Username
                                 </th>
                             </tr>
                         </thead>
@@ -135,26 +74,18 @@
                         <tbody>
                             <tr class="odd">
                                 <td>
-                                    9 June 2019, 14:20:20
+                                    2019001
                                 </td>
                                 <td>
-                                    Inserted 1 Product ID: "233200FF"
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td>
-                                    9 June 2019, 14:20:20
-                                </td>
-                                <td>
-                                    Inserted 1 Product ID: "233200FF"
+                                    Admin
                                 </td>
                             </tr>
-                            <tr class="odd">
+                            <tr>
                                 <td>
-                                    9 June 2019, 14:20:20
+                                    2019003
                                 </td>
                                 <td>
-                                    Inserted 1 Product ID: "233200FF"
+                                    Sovannareach
                                 </td>
                             </tr>
                         </tbody>

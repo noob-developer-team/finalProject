@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="UserActivities.aspx.cs" Inherits="finalProject.ListItems" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master" CodeBehind="UserActivityList.aspx.cs" Inherits="finalProject.ListItems" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -57,6 +57,12 @@
                                 <div class="advanced-search-row">
                                     <label>
                                         To
+                                    </label>
+                                    <input type="text" runat="server"/>
+                                </div>
+                                <div class="advanced-search-row">
+                                    <label>
+                                        Username/ID
                                     </label>
                                     <input type="text" runat="server"/>
                                 </div>
@@ -122,10 +128,13 @@
                         <thead class="table-header">
                             <tr>
                                 <th class="sorting">
-                                    Date and Time
+                                    Username
                                 </th>
                                 <th class="sorting">
-                                    Activities
+                                    Login Time
+                                </th>
+                                <th class="sorting">
+                                    Actions
                                 </th>
                             </tr>
                         </thead>
@@ -135,26 +144,40 @@
                         <tbody>
                             <tr class="odd">
                                 <td>
+                                    Sokheng
+                                </td>
+                                <td>
                                     9 June 2019, 14:20:20
                                 </td>
                                 <td>
-                                    Inserted 1 Product ID: "233200FF"
+                                    <a class="action-btn first" href="UserActivities.aspx">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a class="action-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="action-btn last">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr class="odd">
                                 <td>
-                                    9 June 2019, 14:20:20
+                                    Sokheng
                                 </td>
-                                <td>
-                                    Inserted 1 Product ID: "233200FF"
-                                </td>
-                            </tr>
-                            <tr class="odd">
                                 <td>
                                     9 June 2019, 14:20:20
                                 </td>
                                 <td>
-                                    Inserted 1 Product ID: "233200FF"
+                                    <a class="action-btn first" href="UserActivities.aspx">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a class="action-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="action-btn last">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
