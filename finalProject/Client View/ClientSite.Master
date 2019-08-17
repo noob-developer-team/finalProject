@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ClientSite.master.cs" Inherits="finalProject.ClientSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Newb-Computer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="~/Client View/styles/ForMasterPage.css" runat="server" />
+    <link rel="stylesheet" href="~/Client View/styles/ForHomepage.css" runat="server" />
+    <asp:ContentPlaceHolder ID="clientHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Header Start-->
+        <div class="header">
+
+            <!--Header Leading Start-->
+            <div class="header-leading">
+                <a class="leading-logo" href="#">
+                    <img src="../assets/client-logo.png" width="159" height="39"/>
+                </a>
+            </div>
+            <!--Header Leading End-->
+
+            <!--Header Navigation Bar Start-->
+            <div class="header-navbar">
+                <ul style="list-style: none;">
+                    <li class="navbar-item">
+                        <a class="navbar-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link">
+                            Products
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Header Navigation Bar Start-->
+
+        </div>
+        <!--Header End-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

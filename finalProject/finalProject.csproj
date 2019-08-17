@@ -95,25 +95,33 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddCPU.aspx" />
-    <Content Include="AddRAM.aspx" />
-    <Content Include="AddStorage.aspx" />
-    <Content Include="AddVGA.aspx" />
+    <Content Include="Admin View\AddCPU.aspx" />
+    <Content Include="Admin View\AddPC.aspx" />
+    <Content Include="Admin View\AddRAM.aspx" />
+    <Content Include="Admin View\AddStorage.aspx" />
+    <Content Include="Admin View\AddVGA.aspx" />
+    <Content Include="Admin View\Configuration.aspx" />
+    <Content Include="Admin View\ListItems.aspx" />
+    <Content Include="Admin View\ListUser.aspx" />
+    <Content Include="Admin View\ModifyUser.aspx" />
+    <Content Include="Admin View\Upgrade PC.aspx" />
+    <Content Include="Admin View\UserActivities.aspx" />
+    <Content Include="Admin View\UserActivityList.aspx" />
+    <Content Include="assets\client-logo.png" />
     <Content Include="assets\profile.jpg" />
-    <Content Include="Configuration.aspx" />
-    <Content Include="ListItems.aspx" />
-    <Content Include="ListUser.aspx" />
-    <Content Include="ModifyUser.aspx" />
+    <Content Include="Client View\Homepage.aspx" />
+    <Content Include="Client View\styles\ForHomepage.css" />
+    <Content Include="Client View\styles\ForMasterPage.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="MasterPage.Master" />
-    <Content Include="styles\ForSetting.css" />
-    <Content Include="styles\ForWebMasterPage.css" />
-    <Content Include="styles\ForAddProductContent.css" />
-    <Content Include="styles\ForAndroid.css" />
-    <Content Include="AddPC.aspx" />
+    <Content Include="Admin View\styles\ForSetting.css" />
+    <Content Include="Admin View\styles\ForWebMasterPage.css" />
+    <Content Include="Admin View\styles\ForAddProductContent.css" />
+    <Content Include="Admin View\styles\ForAndroid.css" />
+    <Content Include="Admin View\MasterPage.Master" />
+    <Content Include="Client View\ClientSite.Master" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -125,104 +133,115 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Upgrade PC.aspx" />
-    <Content Include="UserActivities.aspx" />
-    <Content Include="UserActivityList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCPU.aspx.cs">
+    <Compile Include="Admin View\AddCPU.aspx.cs">
       <DependentUpon>AddCPU.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddCPU.aspx.designer.cs">
+    <Compile Include="Admin View\AddCPU.aspx.designer.cs">
       <DependentUpon>AddCPU.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddRAM.aspx.cs">
+    <Compile Include="Admin View\AddPC.aspx.cs">
+      <DependentUpon>AddPC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AddPC.aspx.designer.cs">
+      <DependentUpon>AddPC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AddRAM.aspx.cs">
       <DependentUpon>AddRAM.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddRAM.aspx.designer.cs">
+    <Compile Include="Admin View\AddRAM.aspx.designer.cs">
       <DependentUpon>AddRAM.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddStorage.aspx.cs">
+    <Compile Include="Admin View\AddStorage.aspx.cs">
       <DependentUpon>AddStorage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddStorage.aspx.designer.cs">
+    <Compile Include="Admin View\AddStorage.aspx.designer.cs">
       <DependentUpon>AddStorage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddVGA.aspx.cs">
+    <Compile Include="Admin View\AddVGA.aspx.cs">
       <DependentUpon>AddVGA.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddVGA.aspx.designer.cs">
+    <Compile Include="Admin View\AddVGA.aspx.designer.cs">
       <DependentUpon>AddVGA.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Configuration.aspx.cs">
+    <Compile Include="Admin View\Configuration.aspx.cs">
       <DependentUpon>Configuration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Configuration.aspx.designer.cs">
+    <Compile Include="Admin View\Configuration.aspx.designer.cs">
       <DependentUpon>Configuration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ListItems.aspx.cs">
+    <Compile Include="Admin View\ListItems.aspx.cs">
       <DependentUpon>ListItems.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListItems.aspx.designer.cs">
+    <Compile Include="Admin View\ListItems.aspx.designer.cs">
       <DependentUpon>ListItems.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ListUser.aspx.cs">
+    <Compile Include="Admin View\ListUser.aspx.cs">
       <DependentUpon>ListUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListUser.aspx.designer.cs">
+    <Compile Include="Admin View\ListUser.aspx.designer.cs">
       <DependentUpon>ListUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModifyUser.aspx.cs">
+    <Compile Include="Admin View\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ModifyUser.aspx.cs">
       <DependentUpon>ModifyUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModifyUser.aspx.designer.cs">
+    <Compile Include="Admin View\ModifyUser.aspx.designer.cs">
       <DependentUpon>ModifyUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Upgrade PC.aspx.cs">
+      <DependentUpon>Upgrade PC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Upgrade PC.aspx.designer.cs">
+      <DependentUpon>Upgrade PC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\UserActivities.aspx.cs">
+      <DependentUpon>UserActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\UserActivities.aspx.designer.cs">
+      <DependentUpon>UserActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\UserActivityList.aspx.cs">
+      <DependentUpon>UserActivityList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\UserActivityList.aspx.designer.cs">
+      <DependentUpon>UserActivityList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client View\ClientSite.Master.cs">
+      <DependentUpon>ClientSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client View\ClientSite.Master.designer.cs">
+      <DependentUpon>ClientSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Client View\Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client View\Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MasterPage.Master.cs">
-      <DependentUpon>MasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPage.Master.designer.cs">
-      <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="AddPC.aspx.cs">
-      <DependentUpon>AddPC.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddPC.aspx.designer.cs">
-      <DependentUpon>AddPC.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Upgrade PC.aspx.cs">
-      <DependentUpon>Upgrade PC.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Upgrade PC.aspx.designer.cs">
-      <DependentUpon>Upgrade PC.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserActivities.aspx.cs">
-      <DependentUpon>UserActivities.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserActivities.aspx.designer.cs">
-      <DependentUpon>UserActivities.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserActivityList.aspx.cs">
-      <DependentUpon>UserActivityList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserActivityList.aspx.designer.cs">
-      <DependentUpon>UserActivityList.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="finalProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Setting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="~/Admin View/styles/ForWebMasterPage.css" media="screen" runat="server" />
+    <link rel="stylesheet" href="~/Admin View/styles/ForAddProductContent.css" media="screen" runat="server" />
+    <link rel="stylesheet" href="~/Admin View/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
+    <link rel="stylesheet" href="~/Admin View/styles/ForSetting.css" runat="server" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <!--Side Menu (Column 1)-->
+            <div class="column side-menu">
+
+                <!--Shop Logo-->
+                <div class="logo">
+                    <a href="#">
+                        <img src="/assets/logo-no-bg.png" alt="not found" id="side-menu-logo" />
+                    </a>
+                </div>
+
+                <!--Menu Items-->
+                <div class="menu">
+                    <ul>
+
+                        <!--First Item-->
+                        <li>
+                            <div id="first-item" class="items main">
+                                <a href="ListItems.aspx" class="menu-link">
+                                    <i class="fas fa-align-left"></i>
+                                    <span>
+                                        List Items
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!--Second Items-->
+                        <li id="second-item">
+                            <div class="items main">
+                                <a href="#" class="menu-link">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>
+                                        Products
+                                    </span>
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <ul class="nested">
+                                <li class="items sub">
+                                    <a class="menu-link" href="AddPC.aspx">
+                                        PC
+                                    </a>
+                                    <a class="menu-link" href="Upgrade PC.aspx">
+                                        Upgrade PC
+                                    </a>
+                                    <a class="menu-link" href="AddRAM.aspx">
+                                        RAM
+                                    </a>
+                                    <a class="menu-link" href="AddVGA.aspx">
+                                        VGA
+                                    </a>
+                                    <a class="menu-link" href="AddCPU.aspx">
+                                        CPU
+                                    </a>
+                                    <a class="menu-link" href="AddStorage.aspx">
+                                        Storage
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Third Items-->
+                        <li>
+                            <div class="items main">
+                                <a href="Configuration.aspx" class="menu-link">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Configuration
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <!--Fourth Items-->
+                        <li id="fourth-item">
+                            <div class="items main">
+                                <a href="#" class="menu-link">
+                                    <i class="fas fa-cog"></i>
+                                    <span>
+                                        Setting
+                                    </span>
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <ul class="nested">
+                                <li class="items sub">
+                                    <a class="menu-link" href="ModifyUser.aspx">
+                                        Modify User
+                                    </a>
+                                    <a class="menu-link" href="UserActivityList.aspx">
+                                        User Activities
+                                    </a>
+                                    <a class="menu-link" href="ListUser.aspx">
+                                        List User
+                                    </a>
+                                    <a class="menu-link" href="#">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Column 2-->
+            <div class="column content-wrapper">
+
+                <!--Navigation Bar-->
+                <div class="nav-bar">
+
+                    <!--Lead-->
+                    <div class="lead">
+
+                        <!--Hamburger Button-->
+                        <div class="hamburger" id="hamburger-btn">
+                            <a href="#" class="hamburger-icons">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+
+                        <!--Lead Title-->
+                        <div class="lead-title">
+                            Setting
+                        </div>
+                    </div>
+
+                    <!--Search Box-->
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="Search" />
+                        <div id="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <!--Notification-->
+                    <div class="notification">
+                        <a href="#">
+                            <img src="/assets/bell.png" alt="404" height="20" width="18" />
+                        </a>
+                    </div>
+
+                    <div class="profile">
+                        <div class="profile-name">
+                            <span>Admin
+                            </span>
+                        </div>
+                        <div class="profile-img">
+                            <img src="/assets/profile.png" alt="404" height="35" width="35" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--Contents-->
+                <div class="main-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        var hamburger = $('#hamburger-btn');
+        var sideMenu = $('.side-menu');
+        var contentWrapper = $('.content-wrapper');
+        var displayState = true;
+        hamburger.click(function () {
+            if (displayState == true) {
+                sideMenu.hide();
+                contentWrapper.width('100%');
+                displayState = false;
+            }
+            else {
+                sideMenu.show();
+                contentWrapper.width('80%');
+                displayState = true;
+            }
+
+        });
+
+        $('#listUser').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.user').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.user').toggleClass('active');
+        });
+
+        $('#listPassword').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.change-password').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.change-password').toggleClass('active');
+        });
+
+        $('#listBrand').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.brand').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.brand').toggleClass('active');
+        });
+
+        $('#listSeries').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.series').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.series').toggleClass('active');
+        });
+
+        $('#listModel').click(function () {
+            $('.tab-pane.active').toggleClass('active');
+            $('.tab-pane.model').toggleClass('active');
+            $('.tab-link.active').toggleClass('active');
+            $('.tab-link.model').toggleClass('active');
+        });
+        $('.search-header').click(function () {
+            $('.advanced-search-detail').toggleClass('active');
+            $('.search-header').toggleClass('hide');
+        });
+        $('.search-header.hide').click(function () {
+            $('.advanced-search-detail').toggleClass('active');
+            $('.search-header').toggleClass('hide');
+        });
+
+        $('#second-item').click(function () {
+            $('#second-item').toggleClass('expanded');
+            $('#second-item .sub').toggleClass('active');
+            $('#second-item .fa-angle-right').toggleClass('expanded');
+        });
+        $('#second-item.expanded').click(function () {
+            $('#second-item .sub').toggleClass('active');
+            $('#second-item .fa-angle-right').toggleClass('expanded');
+            $('#second-item').toggleClass('expanded');
+        });
+
+        $('#fourth-item').click(function () {
+            $('#fourth-item').toggleClass('expanded');
+            $('#fourth-item .sub').toggleClass('active');
+            $('#fourth-item .fa-angle-right').toggleClass('expanded');
+        });
+        $('#fourth-item.expanded').click(function () {
+            $('#fourth-item .sub').toggleClass('active');
+            $('#fourth-item .fa-angle-right').toggleClass('expanded');
+            $('#fourth-item').toggleClass('expanded');
+        });
+    </script>
+</body>
+</html>
