@@ -74,6 +74,23 @@
             </div>
             <!--Product Categories End-->
 
+            <!--Banners Start-->
+            <div class="sections">
+                <div class="banner-wrapper">
+                    <ul style="list-style: none;">
+                        <li>
+                            <div class="banners">
+                                <img src="/assets/banners/msi-gaming-laptop.jpg" />
+                            </div>
+                            <div class="banners">
+                                <img src="/assets/banners/free-flash.jpg" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Banners End-->
+
             <!--New Arrivals Start-->
             <div class="sections">
                 <div class="section-title">
@@ -88,15 +105,84 @@
                             <div class="product-cards">
 
                                 <!--Thumbnail Start-->
-                                <div class="products-cards-thumbnail">
+                                <div class="product-cards-thumbnail">
                                     <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
                                 </div>
                                 <!--Thumbnail End-->
 
                                 <!--Model Name Start-->
                                 <div class="product-cards-model">
-                                    <span>
-                                        ROG Zephyrus S Ultra Slim
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
+                                    </span>
+                                </div>
+                                <!--Model Name End-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-cards">
+
+                                <!--Thumbnail Start-->
+                                <div class="product-cards-thumbnail">
+                                    <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
+                                </div>
+                                <!--Thumbnail End-->
+
+                                <!--Model Name Start-->
+                                <div class="product-cards-model">
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
+                                    </span>
+                                </div>
+                                <!--Model Name End-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-cards">
+
+                                <!--Thumbnail Start-->
+                                <div class="product-cards-thumbnail">
+                                    <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
+                                </div>
+                                <!--Thumbnail End-->
+
+                                <!--Model Name Start-->
+                                <div class="product-cards-model">
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
+                                    </span>
+                                </div>
+                                <!--Model Name End-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-cards">
+
+                                <!--Thumbnail Start-->
+                                <div class="product-cards-thumbnail">
+                                    <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
+                                </div>
+                                <!--Thumbnail End-->
+
+                                <!--Model Name Start-->
+                                <div class="product-cards-model">
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
                                     </span>
                                 </div>
                                 <!--Model Name End-->

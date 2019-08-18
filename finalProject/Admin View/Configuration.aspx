@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="Configuration.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="Configuration.aspx.cs" Inherits="finalProject.Configuration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -59,15 +59,13 @@
                                                 Brand
                                             </span>
                                         </div>
-                                        <input type="text" class="input-box suffix" runat="server" />
+                                        <input type="text" id="textBrandName" name ="textBrandName" class="input-box suffix" />
                                     </div>
                                 </div>
                             </li>
                         </ul>
                         <div class="save-row">
-                            <button class="btn btn-normal">
-                                Save
-                            </button>
+                            <asp:Button ID="btnSaveBrand" runat="server" CssClass="btn btn-normal" Text="Save" OnClick="btnSaveBrand_Click" />
                         </div>
                     </div>
                     
@@ -82,12 +80,9 @@
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="text" class="input-box prefix" runat="server" />
-                                        <div class="input-grp drop-down suffix">
-                                            <span class="input-grp-text">
-                                                <i class="fas fa-caret-down"></i>
-                                            </span>
-                                        </div>
+                                        <%--<input type="text" class="input-box prefix" />--%>
+                                        <asp:DropDownList ID="dropDownListSeriesBrandName" runat="server" CssClass="input-grp-drop-down">
+                                        </asp:DropDownList>
                                     </div>
                                 </div>
                             </li>
@@ -104,15 +99,13 @@
                                                 Series
                                             </span>
                                         </div>
-                                        <input type="text" class="input-box suffix" runat="server" />
+                                        <input type="text" id="textSeriesName" name ="textSeriesName" class="input-box suffix" />
                                     </div>
                                 </div>
                             </li>
                         </ul>
                         <div class="save-row">
-                            <button class="btn btn-normal">
-                                Save
-                            </button>
+                            <asp:Button ID="btnSaveSeries" runat="server" CssClass="btn btn-normal" Text="Save" OnClick="btnSaveSeries_Click" />
                         </div>
                     </div>
 
@@ -127,12 +120,8 @@
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="text" class="input-box prefix" runat="server" />
-                                        <div class="input-grp drop-down suffix">
-                                            <span class="input-grp-text">
-                                                <i class="fas fa-caret-down"></i>
-                                            </span>
-                                        </div>
+                                        <asp:DropDownList ID="dropDownListModelBrandName" runat="server" CssClass="input-grp-drop-down">
+                                        </asp:DropDownList>
                                     </div>
                                 </div>
                             </li>
@@ -144,12 +133,7 @@
                                         </span>
                                     </div>
                                     <div class="input-input">
-                                        <input type="text" class="input-box prefix" runat="server" />
-                                        <div class="input-grp drop-down suffix">
-                                            <span class="input-grp-text">
-                                                <i class="fas fa-caret-down"></i>
-                                            </span>
-                                        </div>
+                                        <asp:DropDownList ID="dropDownListSeriesName" runat="server" CssClass="input-grp-drop-down"></asp:DropDownList>
                                     </div>
                                 </div>
                             </li>
@@ -160,21 +144,20 @@
                                             Model Name
                                         </span>
                                     </div>
+                                    
                                     <div class="input-input">
                                         <div class="input-grp prefix">
                                             <span class="input-grp-text">
-                                                Series
+                                                Model
                                             </span>
                                         </div>
-                                        <input type="text" class="input-box suffix" runat="server" />
+                                        <input type="text" id="textModelName" name ="textModelName" class="input-box suffix" />
                                     </div>
                                 </div>
                             </li>
                         </ul>
                         <div class="save-row">
-                            <button class="btn btn-normal">
-                                Save
-                            </button>
+                            <asp:Button ID="btnSaveModel" runat="server" CssClass="btn btn-normal" Text="Save" OnClick="btnSaveModel_Click" />
                         </div>
                     </div>
                 </div>

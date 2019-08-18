@@ -1,6 +1,8 @@
-﻿.content-wrapper {
+﻿@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+
+.content-wrapper {
     margin-top: 50px;
-    padding: 0 300px;
+    padding: 0 20%;
     background-color: #e4e4e4;
     font-family: 'teko', sans-serif;
 }
@@ -14,7 +16,7 @@
     width: 100%;
 }
 
-.sections{
+.sections {
     padding: 30px;
 }
 
@@ -66,13 +68,57 @@
         transform: translate(-50%, -50%) scale(0.7);
     }
 
-.product-list > ul {
-    display: flex;
+.banners {
+    margin-bottom: 20px;
 }
 
-.product-cards{
-    width: 280px;
-    height: 405px;
-    border: 1px solid #707070;
-    border-radius: 5px;
+    .banners img {
+        width: 100%;
+    }
+
+.product-list > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.product-cards {
+    width: 200px;
+    min-height: 315px;
+    border: 2px solid #707070;
+    border-radius: 5px;
+    padding: 2.5%;
+    margin-bottom: 20px;
+    transition: transform .3s ease-in-out;
+}
+
+    .product-cards:hover {
+        transform: scale(1.08);
+    }
+
+.product-cards-thumbnail {
+    position: relative;
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+    .product-cards-thumbnail img {
+        width: 95%;
+        position: relative;
+        left: 50%;
+        display: block;
+        transform: translateX(-50%);
+    }
+
+.product-cards-model {
+    text-align: center;
+}
+
+    .product-cards-model > .model-name {
+        font-size: 20px;
+    }
+
+    .product-cards-model .model-price {
+        font-size: 25px;
+        color: red;
+    }

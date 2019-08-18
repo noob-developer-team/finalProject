@@ -16,6 +16,11 @@
     font-size: 1.2rem;
     border-bottom: 1px solid #e1e1e1;
 }
+
+.display-none{
+    display:none;
+}
+
 .content-detail {
     display: block;
     padding: 5px 30px 5px;

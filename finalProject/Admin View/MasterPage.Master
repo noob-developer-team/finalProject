@@ -1,10 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="finalProject.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="finalProject.MasterPage" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Setting</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -12,8 +13,13 @@
     <link rel="stylesheet" href="~/Admin View/styles/ForAddProductContent.css" media="screen" runat="server" />
     <link rel="stylesheet" href="~/Admin View/styles/ForAndroid.css" media="screen and (max-width: 768px)" runat="server" />
     <link rel="stylesheet" href="~/Admin View/styles/ForSetting.css" runat="server" />
+    <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <%--<link href="styles/all.css" rel="stylesheet" />--%>
+    <!--ajax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -61,7 +67,7 @@
                                     <a class="menu-link" href="AddPC.aspx">
                                         PC
                                     </a>
-                                    <a class="menu-link" href="Upgrade PC.aspx">
+                                    <a class="menu-link" href="UpgradePC.aspx">
                                         Upgrade PC
                                     </a>
                                     <a class="menu-link" href="AddRAM.aspx">
@@ -179,7 +185,9 @@
             </div>
         </div>
     </form>
-    <script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="../scripts/myscript.js"></script>
+    <%--<script>
         var hamburger = $('#hamburger-btn');
         var sideMenu = $('.side-menu');
         var contentWrapper = $('.content-wrapper');
@@ -262,6 +270,8 @@
             $('#fourth-item .fa-angle-right').toggleClass('expanded');
             $('#fourth-item').toggleClass('expanded');
         });
-    </script>
+    </script>--%>
+
 </body>
 </html>
+

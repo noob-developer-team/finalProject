@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="AddPC.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="AddPC.aspx.cs" Inherits="finalProject.AddPC" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -136,7 +136,8 @@
                                 Image Preview
                             </div>
                             <div class="images">
-                                <div class="img-prw">
+                                <div class="img-prw img-prw-after" id="cameraicon">
+                                    <input id="fileUpload" name="fileUpload" type="file" class="display-none"/>
                                     <img src="/assets/camera.png" alt="404" id="camera-icon" />
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="AddPC.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="UpgradePC.aspx.cs" Inherits="finalProject.UpgradePC" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 

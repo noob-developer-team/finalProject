@@ -104,10 +104,13 @@
     <Content Include="Admin View\ListItems.aspx" />
     <Content Include="Admin View\ListUser.aspx" />
     <Content Include="Admin View\ModifyUser.aspx" />
-    <Content Include="Admin View\Upgrade PC.aspx" />
+    <Content Include="Admin View\UpgradePC.aspx" />
     <Content Include="Admin View\UserActivities.aspx" />
     <Content Include="Admin View\UserActivityList.aspx" />
+    <Content Include="assets\banners\free-flash.jpg" />
+    <Content Include="assets\banners\msi-gaming-laptop.jpg" />
     <Content Include="assets\client-logo.png" />
+    <Content Include="assets\laptop-images\ROG Zephyrus S Ultra Slim.jpg" />
     <Content Include="assets\profile.jpg" />
     <Content Include="Client View\Homepage.aspx" />
     <Content Include="Client View\styles\ForHomepage.css" />
@@ -133,6 +136,8 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\myscript.js" />
+    <Content Include="Admin View\uploadimage\UploadImageService.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -206,12 +211,12 @@
     <Compile Include="Admin View\ModifyUser.aspx.designer.cs">
       <DependentUpon>ModifyUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin View\Upgrade PC.aspx.cs">
-      <DependentUpon>Upgrade PC.aspx</DependentUpon>
+    <Compile Include="Admin View\UpgradePC.aspx.cs">
+      <DependentUpon>UpgradePC.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin View\Upgrade PC.aspx.designer.cs">
-      <DependentUpon>Upgrade PC.aspx</DependentUpon>
+    <Compile Include="Admin View\UpgradePC.aspx.designer.cs">
+      <DependentUpon>UpgradePC.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin View\UserActivities.aspx.cs">
       <DependentUpon>UserActivities.aspx</DependentUpon>
@@ -241,7 +246,13 @@
     <Compile Include="Client View\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="database\dbManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin View\uploadimage\Image.cs" />
+    <Compile Include="Admin View\uploadimage\UploadImageService.asmx.cs">
+      <DependentUpon>UploadImageService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

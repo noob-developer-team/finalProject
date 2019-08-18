@@ -10,6 +10,6 @@
 namespace finalProject {
     
     
-    public partial class ListItems {
+    public partial class UserActivityList {
     }
 }

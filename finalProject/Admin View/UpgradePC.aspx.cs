@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace finalProject
 {
-    public partial class AddCPU : System.Web.UI.Page
+    public partial class UpgradePC : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

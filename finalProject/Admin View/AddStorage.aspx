@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="AddRAM.aspx.cs" Inherits="finalProject.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Admin View/MasterPage.Master" CodeBehind="AddStorage.aspx.cs" Inherits="finalProject.AddStorage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 

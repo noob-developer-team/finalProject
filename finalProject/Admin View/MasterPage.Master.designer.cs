@@ -10,7 +10,7 @@
 namespace finalProject {
     
     
-    public partial class Site1 {
+    public partial class MasterPage {
         
         /// <summary>
         /// head control.
