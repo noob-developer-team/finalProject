@@ -68,3 +68,38 @@ E:\Education\UP\UP Year 3\S2\Dynamic Web Application Class\finalProject\finalPro
 E:\Education\UP\UP Year 3\S2\Dynamic Web Application Class\finalProject\finalProject\obj\Debug\finalProject.csproj.CopyComplete
 E:\Education\UP\UP Year 3\S2\Dynamic Web Application Class\finalProject\finalProject\obj\Debug\finalProject.dll
 E:\Education\UP\UP Year 3\S2\Dynamic Web Application Class\finalProject\finalProject\obj\Debug\finalProject.pdb
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\ApplicationInsights.config
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\csc.exe
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\vbc.exe
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\finalProject.dll.config
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\finalProject.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\finalProject.pdb
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.Web.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.ApplicationInsights.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.Web.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.ApplicationInsights.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\obj\Debug\finalProject.csprojAssemblyReference.cache
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\obj\Debug\finalProject.csproj.CoreCompileInputs.cache
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\obj\Debug\finalProject.csproj.CopyComplete
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\obj\Debug\finalProject.dll
+C:\Users\BeatBydad\Documents\Aspfinalproject\finalProject\finalProject\finalProject\obj\Debug\finalProject.pdb

@@ -109,9 +109,12 @@
     <Content Include="Admin View\UserActivityList.aspx" />
     <Content Include="assets\client-logo.png" />
     <Content Include="assets\profile.jpg" />
+    <Content Include="assets\profileicon.png" />
     <Content Include="Client View\Homepage.aspx" />
     <Content Include="Client View\styles\ForHomepage.css" />
     <Content Include="Client View\styles\ForMasterPage.css" />
+    <Content Include="Login View\Loginpage.aspx" />
+    <Content Include="Login View\styles\ForLoginpage.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -240,6 +243,13 @@
     </Compile>
     <Compile Include="Client View\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login View\Loginpage.aspx.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login View\Loginpage.aspx.designer.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
