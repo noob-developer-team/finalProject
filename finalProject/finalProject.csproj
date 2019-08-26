@@ -108,13 +108,17 @@
     <Content Include="Admin View\UserActivities.aspx" />
     <Content Include="Admin View\UserActivityList.aspx" />
     <Content Include="assets\banners\free-flash.jpg" />
+    <Content Include="assets\banners\Image 1.png" />
     <Content Include="assets\banners\msi-gaming-laptop.jpg" />
     <Content Include="assets\client-logo.png" />
     <Content Include="assets\laptop-images\ROG Zephyrus S Ultra Slim.jpg" />
     <Content Include="assets\profile.jpg" />
     <Content Include="Client View\Homepage.aspx" />
+    <Content Include="Client View\Product List.aspx" />
     <Content Include="Client View\styles\ForHomepage.css" />
     <Content Include="Client View\styles\ForMasterPage.css" />
+    <Content Include="Client View\Product Detail.aspx" />
+    <Content Include="Client View\styles\ForProductList.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -136,6 +140,7 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\clientView-productList.js" />
     <Content Include="scripts\myscript.js" />
     <Content Include="Admin View\uploadimage\UploadImageService.asmx" />
     <Content Include="Web.config" />
@@ -245,6 +250,20 @@
     </Compile>
     <Compile Include="Client View\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client View\Product Detail.aspx.cs">
+      <DependentUpon>Product Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client View\Product Detail.aspx.designer.cs">
+      <DependentUpon>Product Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client View\Product List.aspx.cs">
+      <DependentUpon>Product List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client View\Product List.aspx.designer.cs">
+      <DependentUpon>Product List.aspx</DependentUpon>
     </Compile>
     <Compile Include="database\dbManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

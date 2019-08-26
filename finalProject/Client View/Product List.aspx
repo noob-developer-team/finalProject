@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Client View/ClientSite.Master" CodeBehind="Homepage.aspx.cs" Inherits="finalProject.Client_View.Homepage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Client View/ClientSite.Master" CodeBehind="Product Detail.aspx.cs" Inherits="finalProject.Client_View.Homepage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="clientHead" runat="server">
 
@@ -12,19 +12,19 @@
         <!--Slideshow Start-->
         <div class="slideshow">
             <div class="slideshow-item active">
-                <img src="/assets/banner1.jpg" />
+                <img src="/assets/banners/image 1.png" />
             </div>
         </div>
         <!--Slideshow End-->
-
+        
         <!--Content Body Start-->
         <div class="content-body">
 
             <!--Product Categories Start-->
-            <div class="sections">
+            <div class="sections categories">
                 <div class="section-title">
                     <h2>
-                        Our Products
+                        Product Categories
                     </h2>
                 </div>
                 <div class="product-categories-list">
@@ -73,34 +73,133 @@
                 </div>
             </div>
             <!--Product Categories End-->
-
-            <!--Banners Start-->
-            <div class="sections">
-                <div class="banner-wrapper">
-                    <ul style="list-style: none;">
-                        <li>
-                            <div class="banners">
-                                <img src="/assets/banners/msi-gaming-laptop.jpg" />
-                            </div>
-                            <div class="banners">
-                                <img src="/assets/banners/free-flash.jpg" />
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--Banners End-->
-
-            <!--New Arrivals Start-->
-            <div class="sections">
+            
+            <!--Brands Section Start-->
+            <div class="sections brands" id="brand-categories">
                 <div class="section-title">
                     <h2>
-                        New Arrivals
+                        Brands
                     </h2>
                 </div>
-
-                <div class="product-list new-arrivals">
+                <div class="brand-list">
                     <ul style="list-style: none;">
+                        <li>
+                            <div class="brand-item">
+                                <a href="#" title="Alienware">
+                                    <img src="/assets/laptop-images/logo/alienware light.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item">
+                                <a href="#" title="Asus">
+                                    <img src="/assets/laptop-images/logo/asus.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item">
+                                <a href="#" title="Dell">
+                                    <img src="/assets/laptop-images/logo/dell.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item" title="MSI">
+                                <a href="#">
+                                    <img src="/assets/laptop-images/logo/msi.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item">
+                                <a href="#" title="HP">
+                                    <img src="/assets/laptop-images/logo/hp.jpg" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item" title="Apple">
+                                <a href="#">
+                                    <img src="/assets/laptop-images/logo/apple.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item">
+                                <a href="#" title="Razer">
+                                    <img src="/assets/laptop-images/logo/razer.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Brands Section End-->
+
+            <!--Product List Body Start-->
+            <div class="sections product-list-body">
+
+                <!--Product Brand Section Start-->
+                <div class="product-brand-section" id="asus">
+                    <div class="brand-section-logo">
+                        <img src="../assets/laptop-images/logo/alienware dark sqr.png"/>
+                    </div>
+                    <div class="brand-section-name">
+                        <h5>
+                            Alienware
+                        </h5>
+                    </div>
+                </div>
+                <!--Product Brand Section End-->
+
+                <!--Product List Start-->
+                <div class="product-list">
+                    <ul style="list-style: none;">
+                        <li>
+                            <div class="product-cards">
+
+                                <!--Thumbnail Start-->
+                                <div class="product-cards-thumbnail">
+                                    <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
+                                </div>
+                                <!--Thumbnail End-->
+
+                                <!--Model Name Start-->
+                                <div class="product-cards-model">
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
+                                    </span>
+                                </div>
+                                <!--Model Name End-->
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-cards">
+
+                                <!--Thumbnail Start-->
+                                <div class="product-cards-thumbnail">
+                                    <img src="/assets/laptop-images/ROG Zephyrus S Ultra Slim.jpg" width="100" />
+                                </div>
+                                <!--Thumbnail End-->
+
+                                <!--Model Name Start-->
+                                <div class="product-cards-model">
+                                    <span class="model-name">
+                                        ROG Zephyrus S Ultra Slim (i7 8th/16GB/SSD 256GB/HDD 1TB/15.6"
+                                    </span><br />
+                                    <span class="model-price">
+                                        $3999
+                                    </span>
+                                </div>
+                                <!--Model Name End-->
+
+                            </div>
+                        </li>
                         <li>
                             <div class="product-cards">
 
@@ -191,8 +290,9 @@
                         </li>
                     </ul>
                 </div>
+                <!--Product List End-->
             </div>
-            <!--New Arrivals End-->
+            <!--Product List Body End-->
 
             <!--Brands Section Start-->
             <div class="sections brands">
@@ -205,50 +305,50 @@
                     <ul style="list-style: none;">
                         <li>
                             <div class="brand-item">
-                                <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
+                                <a href="#" title="Alienware">
+                                    <img src="/assets/laptop-images/logo/alienware light.png" width="100" />
                                 </a>
                             </div>
                         </li>
                         <li>
                             <div class="brand-item">
-                                <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
+                                <a href="#" title="Asus">
+                                    <img src="/assets/laptop-images/logo/asus.png" width="100" />
                                 </a>
                             </div>
                         </li>
                         <li>
                             <div class="brand-item">
+                                <a href="#" title="Dell">
+                                    <img src="/assets/laptop-images/logo/dell.png" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item" title="MSI">
                                 <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
+                                    <img src="/assets/laptop-images/logo/msi.png" width="100" />
                                 </a>
                             </div>
                         </li>
                         <li>
                             <div class="brand-item">
+                                <a href="#" title="HP">
+                                    <img src="/assets/laptop-images/logo/hp.jpg" width="100" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-item" title="Apple">
                                 <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
+                                    <img src="/assets/laptop-images/logo/apple.png" width="100" />
                                 </a>
                             </div>
                         </li>
                         <li>
                             <div class="brand-item">
-                                <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="brand-item">
-                                <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="brand-item">
-                                <a href="#">
-                                    <img src="/assets/laptop-images/logo/alienware.png" width="100" />
+                                <a href="#" title="Razer">
+                                    <img src="/assets/laptop-images/logo/razer.png" width="100" />
                                 </a>
                             </div>
                         </li>
@@ -259,8 +359,13 @@
 
         </div>
         <!--Content Body End-->
+        
     </div>
     <!--Content Wrapper End-->
+
+    <!--Script Start-->
+    <script src="../scripts/clientView-productList.js"></script>
+    <!--Script End-->
 </body>
 </html>
 </asp:Content>

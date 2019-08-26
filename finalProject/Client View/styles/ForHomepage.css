@@ -2,7 +2,7 @@
 
 .content-wrapper {
     margin-top: 50px;
-    padding: 0 20%;
+    padding: 0 20% 20px;
     background-color: #e4e4e4;
     font-family: 'teko', sans-serif;
 }
@@ -37,6 +37,26 @@
         justify-content: space-between;
     }
 
+.sections.categories {
+    transition: padding .2s ease-out;
+}
+.brands.sticky .section-title{
+    display: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    z-index: 100;
+    background-color: rgba(240, 248, 255, 0.92);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 10px 30px;
+}
+    .sticky + .sections.product-list-body {
+        margin-top: 210px;
+    }
 .product-categories-item {
     width: 130px;
     height: 156px;
@@ -79,13 +99,13 @@
 .product-list > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .product-cards {
     width: 200px;
     min-height: 315px;
-    border: 2px solid #707070;
+    border: 2px solid #5FD4FF;
     border-radius: 5px;
     padding: 2.5%;
     margin-bottom: 20px;
@@ -122,3 +142,44 @@
         font-size: 25px;
         color: red;
     }
+
+.brand-list {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+    .brand-list > ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+.brand-item {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.product-brand-section#asus {
+    margin-bottom: 25px;
+    padding: 5px;
+    background: linear-gradient(45deg, rgba(95,212,255, 1), rgba(152,243,248,1));
+    display: flex;
+}
+.brand-section-logo {
+    width: 40px;
+}
+    .brand-section-logo img {
+        width: 100%;
+        padding: 5px;
+        display: block;
+    }
+.brand-section-name h5 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}

@@ -29,12 +29,12 @@
             <div class="header-navbar">
                 <ul style="list-style: none;">
                     <li class="navbar-item">
-                        <a class="navbar-link">
+                        <a href="Homepage.aspx" class="navbar-link">
                             Home
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="navbar-link">
+                        <a href="Product List.aspx" class="navbar-link">
                             Products
                         </a>
                     </li>
@@ -49,10 +49,21 @@
 
         </div>
         <!--Header End-->
+
+        <!--Content Placeholder Start-->
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <!--Content Placeholder End-->
+
+        <!--Footer Start-->
+        <div class="footer">
+            <span>
+                ©2019 Triple-Newbies. All right reserved.
+            </span>
+        </div>
+        <!--Footer End-->
     </form>
 </body>
 </html>

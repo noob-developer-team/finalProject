@@ -12,13 +12,22 @@ body {
     justify-content: space-between;
     background-color: #0C283F;
     align-items: center;
-    padding: 5px 300px;
+    padding: 5px 21%;
     font-family: 'Teko', sans-serif;
     font-size: 20px;
     height: 50px;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    background-color: #0C283F;
+    text-align: center;
 }
 .leading-logo>img{
     display: block;
@@ -31,4 +40,12 @@ body {
 }
 .navbar-link{
     padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.navbar-link:visited{
+    color: white;
+}
+.navbar-link:active{
+
 }
